@@ -9,7 +9,7 @@ Lambda Function para disparo de e-mail, utiliza o framework Serverless para cria
 
 ⚠️**Necessário ter o serviço AWS SES (Amazon Simple Email Service) habilitado**
 
-#### 1. Habilite o serviço em sua conta da AWS e crie um Support Case solicitando a virada de sua conta para Production, caso contrário, enquanto você estiver em modo SandBox será preciso verificar todos os e-mails destinatários**
+#### 1. Habilite o serviço em sua conta da AWS e crie um Support Case solicitando a virada de sua conta para Production, caso contrário, enquanto você estiver em modo SandBox será preciso verificar todos os e-mails destinatários
 
 #### 2. Crie um usuário no IAM para ser utilizado no Framework Serverless, anexe as polítics do IAM referente aos serviços API Gateway, Lambda, Amazon SES e demais serviços que você queira utilizar
 
