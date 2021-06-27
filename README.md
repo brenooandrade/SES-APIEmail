@@ -33,6 +33,8 @@ Lambda Function para disparo de e-mail, utiliza o framework Serverless para cria
 }
 ```
 
-
+## Referências / Tecnologias:
+- [Node.js](https://nodejs.org/en/)
+- [Serverless](https://www.serverless.com/)
 
 
