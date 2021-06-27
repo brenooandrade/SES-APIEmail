@@ -15,7 +15,7 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: ${opt:stage, 'prod'}
+  stage: ${opt:stage, 'dev'}
   lambdaHashingVersion: 20201221
 
 functions:
