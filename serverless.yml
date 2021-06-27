@@ -1,0 +1,37 @@
+
+service: lbdaapinodeemail
+
+plugins:
+  - serverless-offline
+  - serverless-stage-manager
+
+frameworkVersion: '2'
+
+custom:
+  stages:
+    - dev
+    - prod
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'prod'}
+  lambdaHashingVersion: 20201221
+
+functions:
+  apiemail:
+    handler: handler.APIEmail
+    events:
+      - http:
+          path: apiemail
+          method: post
+          cors:
+          origin: '*'
+          headers:
+            - Content-Type
+            - X-Amz-Date
+            - Authorization
+            - X-Api-Key
+            - X-Amz-Security-Token
+            - X-Amz-User-Agent
+          allowCredentials: false
