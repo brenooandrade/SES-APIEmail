@@ -3,11 +3,11 @@ Lambda Function para disparo de e-mail, utiliza o framework Serverless para cria
 
 ## Pré-requisitos:
 
-###⚠️**Necessário ter uma conta na AWS**
+⚠️**Necessário ter uma conta na AWS**
 
-###⚠️**Necessário ter o framework "Serverless" em sua estação de trabalho e sua conta na AWS configurada**
+⚠️**Necessário ter o framework "Serverless" em sua estação de trabalho e sua conta na AWS configurada**
 
-###⚠️**Necessário ter o serviço AWS SES (Amazon Simple Email Service) habilitado**
+⚠️**Necessário ter o serviço AWS SES (Amazon Simple Email Service) habilitado**
 
 #### 1. Habilite o serviço em sua conta da AWS e crie um Support Case solicitando a virada de sua conta para Production, caso contrário, enquanto você estiver em modo SandBox será preciso verificar todos os e-mails destinatários**
 
@@ -21,6 +21,7 @@ Lambda Function para disparo de e-mail, utiliza o framework Serverless para cria
 
 #### 6. Teste a chamada para envio do e-mail utilizando o seguinte payload de exemplo:
 
+```json
 {
   "destino": "destinatario1@gmail.com",
   "assunto": "Teste de Email",
@@ -30,7 +31,7 @@ Lambda Function para disparo de e-mail, utiliza o framework Serverless para cria
                 "copia1@yahoo.com"
             ]
 }
-
+```
 
 
 
